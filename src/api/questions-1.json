@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "type": "one-choice",
+    "title": "Question 1",
+    "description": "This is a one-choice question.",
+    "image": "path/to/image1.jpg",
+    "question": "What is the capital of France?",
+    "options": ["Paris", "London", "Berlin"],
+    "next_question_id": 2
+  },
+  {
+    "id": 2,
+    "type": "multiple-choice",
+    "title": "Question 2",
+    "description": "This is a multiple-choice question.",
+    "image": "path/to/image2.jpg",
+    "question": "Which of the following options are correct?",
+    "options": ["Option A", "Option B", "Option C"],
+    "next_question_id": 3
+  },
+  {
+    "id": 3,
+    "type": "input",
+    "title": "Question 3",
+    "description": "This is an input question.",
+    "image": "path/to/image3.jpg",
+    "question": "What is your name?"
+  }
+]
