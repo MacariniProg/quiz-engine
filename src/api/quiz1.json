@@ -1,0 +1,176 @@
+{
+  "id": 1,
+  "title": "User Information Quiz",
+  "description": "A quiz to collect user information.",
+  "questions": [
+    {
+      "id": 1,
+      "type": "one-choice",
+      "title": "Personal Information",
+      "description": "Please provide your personal information.",
+      "image": "https://via.placeholder.com/1600x900",
+      "question": "What is your gender?",
+      "options": [
+        {
+          "id": 1,
+          "value": "Male"
+        },
+        {
+          "id": 2,
+          "value": "Female"
+        },
+        {
+          "id": 3,
+          "value": "Other"
+        }
+      ],
+      "nextQuestionId": 2
+    },
+    {
+      "id": 2,
+      "type": "input",
+      "title": "Age",
+      "image": "https://via.placeholder.com/1600x900",
+      "question": "How old are you?",
+      "nextQuestionId": 3
+    },
+    {
+      "id": 3,
+      "type": "one-choice",
+      "description": "Please provide your employment status.",
+      "image": "https://via.placeholder.com/1600x900",
+      "question": "Are you currently employed?",
+      "options": [
+        {
+          "id": 1,
+          "value": "Yes",
+          "conditionaryQuestion": {
+            "id": 4,
+            "question": "What is your job title?",
+            "type": "input"
+          }
+        },
+        {
+          "id": 2,
+          "value": "No"
+        }
+      ],
+      "nextQuestionId": 5
+    },
+    {
+      "id": 5,
+      "type": "one-choice",
+      "title": "Job Search",
+      "description": "Please provide your job search status.",
+      "question": "Are you currently looking for a job?",
+      "options": [
+        {
+          "id": 1,
+          "value": "Yes"
+        },
+        {
+          "id": 2,
+          "value": "No"
+        }
+      ],
+      "nextQuestionId": 6
+    },
+    {
+      "id": 6,
+      "type": "multiple-choice",
+      "title": "Skills",
+      "question": "Which of the following skills do you have?",
+      "options": [
+        {
+          "id": 1,
+          "value": "Programming",
+          "conditionaryQuestion": {
+            "id": 8,
+            "question": "What programming languages do you know?",
+            "type": "input"
+          }
+        },
+        {
+          "id": 2,
+          "value": "Design",
+          "conditionaryQuestion": {
+            "id": 9,
+            "question": "What design tools do you use?",
+            "type": "input"
+          }
+        },
+        {
+          "id": 3,
+          "value": "Marketing",
+          "conditionaryQuestion": {
+            "id": 10,
+            "question": "What marketing strategies do you use?",
+            "type": "input"
+          }
+        },
+        {
+          "id": 4,
+          "value": "Management",
+          "conditionaryQuestion": {
+            "id": 11,
+            "question": "What management techniques do you use?",
+            "type": "input"
+          }
+        }
+      ],
+      "nextQuestionId": 7
+    },
+    {
+      "id": 7,
+      "type": "multiple-choice",
+      "description": "Please provide the languages you speak.",
+      "question": "Which of the following languages do you speak?",
+      "options": [
+        {
+          "id": 1,
+          "value": "English"
+        },
+        {
+          "id": 2,
+          "value": "Spanish"
+        },
+        {
+          "id": 3,
+          "value": "French"
+        },
+        {
+          "id": 4,
+          "value": "Other",
+          "conditionaryQuestion": {
+            "id": 12,
+            "question": "What other languages do you speak?",
+            "type": "input"
+          }
+        }
+      ],
+      "nextQuestionId": 13
+    },
+    {
+      "id": 13,
+      "type": "one-choice",
+      "image": "https://via.placeholder.com/1600x900",
+      "question": "Would you like to provide additional feedback?",
+      "options": [
+        {
+          "id": 1,
+          "value": "Yes",
+          "conditionaryQuestion": {
+            "id": 14,
+            "question": "Please provide your feedback:",
+            "type": "input"
+          }
+        },
+        {
+          "id": 2,
+          "value": "No"
+        }
+      ],
+      "lastQuestion": 15
+    }
+  ]
+}

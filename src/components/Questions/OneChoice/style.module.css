@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  margin-top: 1rem;
+}
+
+.radio {
+  display: flex;
+}
+
+.radio input {
+  display: none;
+}
+
+.radio label {
+  padding: 1rem;
+  border: 1px solid var(--secondary);
+  border-radius: .5rem;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  width: 100%;
+}
+
+.radio label:hover {
+  background-color: var(--secondary);
+  color: var(--primary);
+}
+
+.radio input:checked+label {
+  background-color: var(--secondary);
+  color: var(--primary);
+}
+
+
+
+/* .radio input {
+  display: none;
+} */

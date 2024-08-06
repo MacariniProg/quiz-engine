@@ -1,0 +1,21 @@
+.container {
+  color: var(--secondary);
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.content div {
+  flex: 1;
+  text-align: left;
+}
+
+.content img {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+}

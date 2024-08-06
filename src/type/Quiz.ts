@@ -1,10 +1,30 @@
-export interface QuestionI {
+export interface QuizI {
   id: number;
-  type: 'one-choice' | 'multiple-choice' | 'input';
   title: string;
   description: string;
-  image: string;
+  questions: QuestionI[];
+}
+
+export type QuestionType = 'one-choice' | 'multiple-choice' | 'input';
+
+export interface QuestionI {
+  id: number;
+  title?: string;
+  description?: string;
+  image?: string;
   question: string;
-  options?: string[];
-  next_question_id?: number;
+  type: QuestionType;
+  // Option undefined for input type
+  options?: Array<{
+    id: number;
+    value: string;
+    conditionaryQuestion?: {
+      id: number;
+      question: string;
+      type: QuestionType;
+      options?: Array<{ id: number; value: string }>
+    }
+  }>;
+  nextQuestionId?: number;
+  lastQuestion?: boolean;
 }
